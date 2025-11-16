@@ -41,6 +41,10 @@ Run it in watch/refresh mode (updates every minute by default):
 
 You can change the refresh interval by editing the `WATCH_INTERVAL` variable at the top of the script (default 60 seconds).
 
+## Sample output
+
+![Month and Year Progress Bar](./MonthAndYearProgressBar.png)
+
 ## Script behavior and output
 
 - The script computes minutes elapsed and total minutes for the month and expresses progress as a percentage with 3 decimal places.
@@ -81,3 +85,4 @@ Small fixes and documentation improvements are welcome. Open a PR or file an iss
 
 ---
 
+© 2025 Michael Perez
