@@ -64,7 +64,8 @@ print_progress() {
   # Calculate business days elapsed
   current_dow=$(date +%u)
   business_days_elapsed=0
-  for ((d=1; d<current_day; d++)); do
+  # Ensure current_day with a leading zero is parsed as decimal (avoid octal error)
+  for ((d=1; d<10#$current_day; d++)); do
     dow=$(date -d "$current_year-$current_month-$d" +%u)
     if (( dow >=1 && dow <=5 )); then
       ((business_days_elapsed++))
